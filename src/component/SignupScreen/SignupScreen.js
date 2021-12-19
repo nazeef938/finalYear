@@ -1,5 +1,5 @@
 import React from "react";
-import web from "../src/images/img1.jpeg";
+import web from "../../images/img1.jpeg";
 import { Link } from "react-router-dom";
 const SignupScreen = () => {
     return(
