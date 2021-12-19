@@ -1,0 +1,33 @@
+.text{
+    color:#008000;
+    font-style: bold;
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: 200%;
+  }
+  #header .form-group1{
+      margin-left: 30%;
+      margin-top: 5%;
+  }
+  #header .btn-started{
+      margin-left: 20%;
+  }
+  #header .btn-started{
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color:	#008000;
+    border: 2px solid	#008000;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+  }
+  
+  #header .btn-started:hover{
+    background-color: #008000;
+    color: aliceblue;
+  }

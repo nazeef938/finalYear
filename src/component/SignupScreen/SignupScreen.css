@@ -10,7 +10,8 @@
 }
 
 .signup-image {
-    width: 50%;
+    margin-left: 5%;
+    width: 40%;
     background-color: transparent   ;
 }
 
@@ -55,3 +56,22 @@
 .input-field {
     width: 75%;
 }
+#header .animated{
+    animation:up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  @-webkit-keyframes up-down{
+    0%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes up-down{
+    0%{
+      transform: translateY(10px);
+    }
+    100%{
+      transform: translateY(-10px);
+    }
+  }
