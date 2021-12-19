@@ -16,22 +16,22 @@ const SignupScreen = () => {
                             <h2 className="form-title">Sign up</h2>
                             <form className="register-form" id="register-form"> 
                                 <div className="form-group">
-                                    <TextField className='input-field' id="outlined-basic" label="Name" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-account material-icons-name"></i>,}}/>
+                                    <TextField placeholder="Name" className='input-field' id="outlined-basic" label="Name" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-account material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <TextField className='input-field' id="outlined-basic" label="Email" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-email material-icons-name"></i>,}}/>
+                                    <TextField placeholder="Email" className='input-field' id="outlined-basic" label="Email" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-email material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <TextField className='input-field' id="outlined-basic" label="Phone" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-phone-in-talk material-icons-name"></i>,}}/>
+                                    <TextField placeholder="Phone" className='input-field' id="outlined-basic" label="Phone" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-phone-in-talk material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <TextField className='input-field' id="outlined-basic" label="Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
+                                    <TextField placeholder="Password" className='input-field' id="outlined-basic" type="password" label="Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <TextField className='input-field' id="outlined-basic" label="Confirm Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
+                                    <TextField placeholder="Confirm Password" className='input-field' id="outlined-basic" type="password" label="Confirm Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group form-button">
-                                <Button variant="contained">Register</Button>
+                                <Button variant="contained" color="success">Register</Button>
                                 </div>
                                 <Link to="/login" className="signup-image-Link">I am already register</Link>
                             </form>
@@ -39,7 +39,7 @@ const SignupScreen = () => {
                         <div className="vl"></div>
                             <div className="signup-image">
                                 <figure>
-                                    <img src={web}className="img-fluid animated" alt="registration pic"/>
+                                    <img src={web} className="img-fluid animated" alt="registration pic"/>
                                 </figure>
                             </div>
                     </div>
