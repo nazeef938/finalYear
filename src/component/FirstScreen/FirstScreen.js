@@ -15,7 +15,7 @@ const FirstScreen = () => {
                             </h1>
                             <div className="mt-3">
                                 <Link to="/signup"  className="btn-get-started">Signup/Login</Link>
-                                <h6> Already have an account</h6>
+                                <Link to="/login" > <h6> Already have an account</h6></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2 header-img pt-5">
