@@ -49,7 +49,7 @@ const SignupScreen = () => {
                                 <figure>
                                     <img src={web}className="img-fluid animated" alt="registration pic"/>
                                 </figure>
-                                <Link to="/" className="signup-image-Link">I am already register</Link>
+                                <Link to="/login" className="signup-image-Link">I am already register</Link>
                             </div>
                     </div>
                 </div>

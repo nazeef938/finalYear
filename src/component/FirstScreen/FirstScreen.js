@@ -14,7 +14,7 @@ const FirstScreen = () => {
                                <strong>Practice Exam Portal For(GATE) Graduate Aptitude Test in Engineering</strong>
                             </h1>
                             <div className="mt-3">
-                                <Link to="/SignupScreen"  className="btn-get-started">Signup/Login</Link>
+                                <Link to="/signup"  className="btn-get-started">Signup/Login</Link>
                                 <h6> Already have an account</h6>
                             </div>
                         </div>
