@@ -1,7 +1,10 @@
 import React from "react";
 import web from "../../images/6.png";
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 import "./SignupScreen.css"
+import TextField from '@mui/material/TextField';
+
 const SignupScreen = () => {
     return(
         <>
@@ -13,37 +16,22 @@ const SignupScreen = () => {
                             <h2 className="form-title">Sign up</h2>
                             <form className="register-form" id="register-form"> 
                                 <div className="form-group">
-                                    <label htmlFor="name">
-                                        <i className="zmdi zmdi-account material-icons-name"></i>
-                                    </label>
-                                    <input type="text" name="name" id="name" autoComplete="off" placeholder="Your Name"/>
+                                    <TextField className='input-field' id="outlined-basic" label="Name" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-account material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="email">
-                                        <i className="zmdi zmdi-email material-icons-name"></i>
-                                    </label>
-                                    <input type="email" name="email" id="email" autoComplete="off" placeholder="Your email"/>
+                                    <TextField className='input-field' id="outlined-basic" label="Email" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-email material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="phone">
-                                        <i className="zmdi zmdi-phone-in-talk material-icons-name"></i>
-                                    </label>
-                                    <input type="number" name="phone" id="phone" autoComplete="off" placeholder="Your Number"/>
+                                    <TextField className='input-field' id="outlined-basic" label="Phone" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-phone-in-talk material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="password">
-                                        <i className="zmdi zmdi-lock material-icons-name"></i>
-                                    </label>
-                                    <input type="password" name="password" id="password" autoComplete="off" placeholder="Your password"/>
+                                    <TextField className='input-field' id="outlined-basic" label="Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="password">
-                                        <i className="zmdi zmdi-lock material-icons-name"></i>
-                                    </label>
-                                    <input type="password" name="cpassword" id="cpassword" autoComplete="off" placeholder="Confirm Your Password"/>
+                                    <TextField className='input-field' id="outlined-basic" label="Confirm Password" variant="outlined" InputProps={{startAdornment: <i className="zmdi zmdi-lock material-icons-name"></i>,}}/>
                                 </div>
                                 <div className="form-group form-button">
-                                    <input type="submit" name="signup" id="signup" className="form-submit" value="register"/>
+                                <Button variant="contained">Register</Button>
                                 </div>
                                 <Link to="/login" className="signup-image-Link">I am already register</Link>
                             </form>

@@ -45,8 +45,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .form-group input {
     flex: 1;
+}
+
+.input-field {
+    width: 75%;
 }
