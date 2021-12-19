@@ -56,6 +56,7 @@
 .input-field {
     width: 75%;
 }
+<<<<<<< HEAD
 #header .animated{
     animation:up-down 2s ease-in-out infinite alternate-reverse both;
   }
@@ -75,3 +76,9 @@
       transform: translateY(-10px);
     }
   }
+=======
+
+i {
+    margin-right: 10px;
+}
+>>>>>>> origin/main
