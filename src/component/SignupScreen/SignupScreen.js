@@ -1,12 +1,14 @@
 import React from "react";
-import web from "../../images/img1.jpeg";
+import web from "../../images/6.png";
 import { Link } from "react-router-dom";
+import "./SignupScreen.css"
 const SignupScreen = () => {
     return(
         <>
             <section className="signup">
                 <div className="container mt-5">
                     <div className="signup-content">
+                        <div className="vl"></div>
                         <div className="signup-form">
                             <h2 className="form-title">Sign up</h2>
                             <form className="register-form" id="register-form"> 
@@ -43,13 +45,14 @@ const SignupScreen = () => {
                                 <div className="form-group form-button">
                                     <input type="submit" name="signup" id="signup" className="form-submit" value="register"/>
                                 </div>
+                                <Link to="/login" className="signup-image-Link">I am already register</Link>
                             </form>
                         </div>
+                        <div className="vl"></div>
                             <div className="signup-image">
                                 <figure>
                                     <img src={web}className="img-fluid animated" alt="registration pic"/>
                                 </figure>
-                                <Link to="/login" className="signup-image-Link">I am already register</Link>
                             </div>
                     </div>
                 </div>

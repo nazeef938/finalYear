@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import web from "../../images/img2.jpg";
+import web from "../../images/6.png";
 
 const FirstScreen = () => {
     return(

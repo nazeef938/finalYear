@@ -1,0 +1,52 @@
+.signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    width: 50%;
+    text-align: center;
+}
+
+.signup-image {
+    width: 50%;
+    background-color: transparent   ;
+}
+
+.signup-form h2 {
+    font-family: 'Baloo Bhai','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    color: #06BBA5;
+    font-size: 64px;
+    line-height: 102px;
+}
+
+.signup-image-Link {
+    color: #008000;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+
+.vl {
+    border-left: 1px solid black;
+    height: 500px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input {
+    flex: 1;
+}
