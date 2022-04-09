@@ -6,17 +6,14 @@ require('dotenv').config()
 exports.login = async (req,res) => {
     try {
         let {email,password} = req.body
-        console.log(email,password)
         let user = await User.findOne({email:email})
         if(!user) {
             throw "Invalid username or password"
         }
-        console.log("1")
         let verifyPassword = await bcrypt.compare(password,user.password)
         if(!verifyPassword) {
             throw "Invalid username or password"
         }
-        console.log("2")
         const payload = {
             user: {
                 id:user._id,
@@ -25,9 +22,7 @@ exports.login = async (req,res) => {
                 type: user.type
             },
         }
-        console.log("3")
         let accessToken = jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: 30*60*60 })
-        console.log("4")
         return res.status(200).json({message:"Login successfuly",user:payload.user,accessToken,status:'success'})
     } catch (err) {
         return res.status(200).json({message:"Some error occurred",error:err,status:'error'})

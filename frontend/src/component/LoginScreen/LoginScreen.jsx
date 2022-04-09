@@ -1,20 +1,25 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import axios from "axios"
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import web from "../../images/img2.jpg";
 import "./LoginScreen.css";
+import AppContext from '../../context/AppContext';
 import TextField from '@mui/material/TextField';
 import { BASE_URL, ERROR } from '../../config/constants';
 export default function LoginScreen() {
     const [user,setUser] = useState({email:"",password:""})
+    const history = useHistory()
+    const context = useContext(AppContext)
     const handleLogin = async () => {
         const response = await axios.post(`${BASE_URL}/login`,user)
         if(response.data.status == ERROR) {
-            return alert(response.data.error)
+            return context.showSnackbar({message:response.data.error,severity:"error"})
         }
         console.log(response.data)
         localStorage.user = JSON.stringify(response.data.user)
         localStorage.accessToken = response.data.accessToken
+        context.showSnackbar({message:"Login successfully",severity:"success"})
+        history.push("/")
     }
 
     return (
